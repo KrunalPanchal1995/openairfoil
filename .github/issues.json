@@ -1,0 +1,87 @@
+[
+  {
+    "title": "Fix typos and unclear sentences in the Session 1 notes",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nThe Session 1 notes may contain typos or sentences that a first-year student finds confusing.\n\n## Context\nBeginners judge the whole repo by Session 1.\n\n## Expected outcome\nA clearer `sessions/session-01/README.md` and `lesson.py` comments.\n\n## Relevant files\n`sessions/session-01/README.md`, `sessions/session-01/lesson.py`\n\n## Acceptance criteria\n- [ ] At least three improvements\n- [ ] `python start.py test` still passes\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add a colour-blind-safe palette to the Session 3 pressure arrows",
+    "labels": [
+      "good first issue",
+      "beginner"
+    ],
+    "body": "## Problem\nThe Session 3 app draws suction arrows in blue and pressure arrows in red; some colour-blind users cannot tell them apart, and the upper and lower Cp curves use the same pair.\n\n## Context\nAccessibility is part of the quality checklist (QUALITY.md, item 9).\n\n## Expected outcome\nA palette and line styles (for example dashed for the lower surface, arrow heads for suction) that stay distinguishable in light and dark mode.\n\n## Relevant files\n`sessions/session-03/app.html`\n\n## Acceptance criteria\n- [ ] Suction and pressure distinguishable in grayscale\n- [ ] Screenshot added to the pull request\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Add Session 4: a laminar boundary layer with Thwaites' method",
+    "labels": [
+      "intermediate",
+      "feature"
+    ],
+    "body": "## Problem\nThe roadmap's first milestone does not exist yet.\n\n## Context\nSee `promo/roadmap.md`, Session 4. The panel method gives the surface speed; the boundary layer needs it to grow.\n\n## Expected outcome\n`sessions/session-04/` with README (sections A to F), lesson, checkpoint, exercises and app in the same style as Sessions 1 to 3.\n\n## Relevant files\n`promo/roadmap.md`, `sessions/session-03/lesson.py`\n\n## Acceptance criteria\n- [ ] Checkpoint prints PASS and the roadmap checkpoint (Blasius flat plate within 2 percent) is met\n- [ ] Added to the tests\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Add Session 5: transition and a turbulent boundary layer",
+    "labels": [
+      "advanced",
+      "feature"
+    ],
+    "body": "## Problem\nSession 3 estimates drag with a fully turbulent flat-plate law that ignores the pressure; real airfoils keep some laminar flow and their drag depends on the pressure.\n\n## Context\nRoadmap Session 5.\n\n## Expected outcome\nA lesson and app where transition is found with Michel's criterion and the drag comes from the Squire-Young formula.\n\n## Relevant files\n`sessions/session-03/lesson.py`, `promo/roadmap.md`\n\n## Acceptance criteria\n- [ ] NACA 0012 at 0 degrees and Re = 6 million gives cd between 0.005 and 0.0065, shown in a figure\n- [ ] Checkpoint added\n\n## Difficulty\nadvanced"
+  },
+  {
+    "title": "Reproduce the Target: an airfoil analyser with boundary layer, drag polar and stall",
+    "labels": [
+      "advanced",
+      "feature"
+    ],
+    "body": "## Problem\nThe Target couples the panel method to a boundary layer to predict the drag polar and stall; there is no public implementation.\n\n## Context\nThe code behind the Target is private on purpose. The roadmap gives the path.\n\n## Expected outcome\nYour own implementation, written from the roadmap, plus figures like the Target for NACA 0012 and 2412.\n\n## Relevant files\n`promo/roadmap.md`, `promo/README.md`\n\n## Acceptance criteria\n- [ ] NACA 0012 at Re = 6 million: lift slope 0.10 to 0.11 per degree, minimum cd 0.005 to 0.0065, CL_max 1.3 to 1.7\n- [ ] Short write-up of your method\n\n## Difficulty\nadvanced"
+  },
+  {
+    "title": "Show streamlines in the Session 3 live app",
+    "labels": [
+      "intermediate",
+      "enhancement"
+    ],
+    "body": "## Problem\nThe Session 3 app shows pressure arrows and Cp but not the streamlines that the lesson figure draws.\n\n## Context\nSeeing the air curve round the nose and leave the trailing edge smoothly makes the Kutta condition visible.\n\n## Expected outcome\nA fourth graph button that traces a handful of streamlines with a simple Runge-Kutta step, using the panel strengths the app already computes.\n\n## Relevant files\n`sessions/session-03/app.html`, `sessions/session-03/lesson.py` (`velocity_field`)\n\n## Acceptance criteria\n- [ ] Streamlines never enter the airfoil\n- [ ] Runs smoothly on a phone\n- [ ] Screenshot added to the pull request\n\n## Difficulty\nintermediate"
+  },
+  {
+    "title": "Translate the Session 1 notes into Hindi",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Hindi cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.hi.md` with a faithful Hindi translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Telugu",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Telugu cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.te.md` with a faithful Telugu translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Tamil",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Tamil cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ta.md` with a faithful Tamil translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  },
+  {
+    "title": "Translate the Session 1 notes into Malayalam",
+    "labels": [
+      "good first issue",
+      "beginner",
+      "documentation"
+    ],
+    "body": "## Problem\nStudents who prefer Malayalam cannot read Session 1 comfortably.\n\n## Context\nThis project teaches first- and second-year students across India; translations widen who can join.\n\n## Expected outcome\n`sessions/session-01/README.ml.md` with a faithful Malayalam translation of sections A to F, linked from the main README.\n\n## Relevant files\n`sessions/session-01/README.md`\n\n## Acceptance criteria\n- [ ] All sections translated\n- [ ] Equations, code blocks and file names unchanged\n- [ ] Link added to the main README\n\n## Difficulty\nbeginner"
+  }
+]
